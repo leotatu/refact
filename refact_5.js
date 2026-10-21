@@ -37,3 +37,17 @@ function processarPedido(pedido) {
 
 QUANDO USAR?
 - Quando uma função possui várias condições de validação antes de executar sua lógica principal.*/
+
+
+/* PARA TESTES
+processarPedido(null)
+// "Pedido inválido"
+
+processarPedido({ pago: false, estoqueDisponivel: true })
+// "Pedido não pago"
+
+processarPedido({ pago: true, estoqueDisponivel: false })
+// "Produto sem estoque"
+
+processarPedido({ pago: true, estoqueDisponivel: true })
+// "Pedido processado"*/
